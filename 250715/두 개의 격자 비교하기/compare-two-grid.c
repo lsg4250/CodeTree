@@ -7,8 +7,8 @@ int main() {
     int a[N][M], b[N][M];
     for(int i=0; i<N*2; i++){
         for(int j=0; j<M; j++){
-            if(a[N][M]==0){scanf("%d", &a[i][j]);}
-            else{scanf("%d", &b[i][j]);}
+            if(i<N){scanf("%d", &a[i][j]);}
+            else{scanf("%d", &b[i-N][j]);}
         }
     }
     for(int i=0; i<N; i++){
